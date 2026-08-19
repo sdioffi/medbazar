@@ -436,3 +436,46 @@ body.telegram-app {
         padding: 0;
     }
 }
+
+/* =========================================
+   ФИНАЛЬНЫЙ ПРЕМИУМ ДИЗАЙН ДЛЯ ТЕЛЕФОНОВ
+   ========================================= */
+@media (max-width: 480px) {
+    /* 1. Делаем фон сайта чуть серым, чтобы белые карточки красиво выделялись (как в iOS) */
+    body.telegram-app {
+        background-color: #f4f6f9 !important; 
+        padding-top: 5px !important;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+    }
+
+    /* 2. Прячем полосу прокрутки у верхнего меню (Лекарства, Витамины), оставляя сам скролл */
+    div, ul, nav, section {
+        scrollbar-width: none !important; /* Для Firefox */
+        -ms-overflow-style: none !important; /* Для IE/Edge */
+    }
+    div::-webkit-scrollbar, ul::-webkit-scrollbar, nav::-webkit-scrollbar {
+        display: none !important; /* Для Chrome, Safari, iOS */
+    }
+
+    /* 3. Делаем карточки товаров и категорий красивее (добавляем мягкие тени и скругляем углы) */
+    .product-card, .category-box, .top-categories > div, [class*="card"] {
+        background: #ffffff !important;
+        border-radius: 16px !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+        border: none !important;
+    }
+
+    /* 4. Выравниваем заголовки (Популярные товары) */
+    h1, h2, h3, .section-title {
+        font-size: 20px !important;
+        font-weight: 700 !important;
+        color: #111 !important;
+        padding-left: 5px;
+    }
+
+    /* 5. Улучшаем верхнее скролл-меню с эмодзи */
+    .categories-scroll, [class*="scroll"], [class*="menu"] {
+        padding-bottom: 10px !important;
+        margin-bottom: 15px !important;
+    }
+}
