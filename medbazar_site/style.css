@@ -376,3 +376,10 @@ body {
     .installment { font-size: 10px; padding: 2px 4px; }
     .add-to-cart { padding: 8px; font-size: 13px; }
 }
+
+body.telegram-app .header {
+    display: none !important;
+}
+body.telegram-app {
+    background-color: var(--tg-theme-bg-color, #ffffff);
+}
