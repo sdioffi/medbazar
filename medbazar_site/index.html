@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Medbazar — Медицинские товары</title>
+    <!-- Подключаем CSS для слайдера -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER (Кнопка Каталог удалена) -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                Med<span>bazar</span>
+            </a>
+
+            <div class="search">
+                <input type="text" placeholder="Поиск медицинских товаров...">
+                <button>🔍</button>
+            </div>
+
+            <div class="header-actions">
+                <button class="action-btn">👤 Войти</button>
+                <button class="action-btn">🤍 Избранное</button>
+                <button class="action-btn cart">🛒 Корзина</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CATEGORIES -->
+    <nav class="categories">
+        <div class="container categories-inner">
+            
+            <div class="category-item">
+                <span class="category-link">💊 Лекарства</span>
+                <div class="dropdown-menu">
+                    <a href="#">Обезболивающие</a>
+                    <a href="#">Антибиотики</a>
+                    <a href="#">От кашля и простуды</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+                <span class="category-link">🍎 Витамины</span>
+                <div class="dropdown-menu">
+                    <a href="#">Витамин C и D</a>
+                    <a href="#">Омега-3 и рыбий жир</a>
+                    <a href="#">Мультивитамины</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+                <span class="category-link">🩺 Медтехника</span>
+                <div class="dropdown-menu">
+                    <a href="#">Тонометры</a>
+                    <a href="#">Термометры</a>
+                    <a href="#">Ингаляторы (небулайзеры)</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+                <span class="category-link">🧴 Уход за собой</span>
+                <div class="dropdown-menu">
+                    <a href="#">Уход за лицом</a>
+                    <a href="#">Уход за телом</a>
+                    <a href="#">Уход за волосами</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+                <span class="category-link">👶 Для детей</span>
+                <div class="dropdown-menu">
+                    <a href="#">Детские витамины</a>
+                    <a href="#">Уход за кожей малыша</a>
+                    <a href="#">Подгузники</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+                <span class="category-link">🩹 Первая помощь</span>
+                <div class="dropdown-menu">
+                    <a href="#">Бинты и пластыри</a>
+                    <a href="#">Антисептики</a>
+                    <a href="#">Аптечки готовые</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+        <!-- 4 БЫСТРЫЕ КАТЕГОРИИ СВЕРХУ -->
+        <section class="quick-categories-section">
+            <div class="container">
+                <div class="quick-categories">
+                    <a href="#" class="quick-cat-card">
+                        <span class="cat-icon">💊</span>
+                        <span class="cat-text">Домашняя аптечка</span>
+                    </a>
+                    <a href="#" class="quick-cat-card">
+                        <span class="cat-icon">🩺</span>
+                        <span class="cat-text">Тонометры</span>
+                    </a>
+                    <a href="#" class="quick-cat-card">
+                        <span class="cat-icon">🧴</span>
+                        <span class="cat-text">Уход за кожей</span>
+                    </a>
+                    <a href="#" class="quick-cat-card">
+                        <span class="cat-icon">👶</span>
+                        <span class="cat-text">Для малышей</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ТОВАРЫ -->
+        <section class="products">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Популярные товары</h2>
+                    <a href="#">Смотреть все →</a>
+                </div>
+
+                <div class="product-grid">
+                    
+                    <!-- РЯД 1 -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <span class="badge sale">Акция</span>
+                            <button class="favorite-btn">🤍</button>
+                            <div class="product-image">💊</div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="old-price">100 000 сум</span>
+                                <span class="new-price">85 000 сум</span>
+                            </div>
+                            <div class="installment">7 083 сум/мес</div>
+                            <h3 class="product-title">Витамины Daily Health, полный комплекс для ежедневного здоровья</h3>
+                            <div class="product-rating"><span class="star">⭐ 4.9</span> <span class="reviews">(128 отзывов)</span></div>
+                        </div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <span class="badge original">Оригинал</span>
+                            <button class="favorite-btn">🤍</button>
+                            <div class="product-image">🩺</div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="old-price">300 000 сум</span>
+                                <span class="new-price">245 000 сум</span>
+                            </div>
+                            <div class="installment">20 416 сум/мес</div>
+                            <h3 class="product-title">Электронный тонометр автоматический для контроля давления</h3>
+                            <div class="product-rating"><span class="star">⭐ 5.0</span> <span class="reviews">(45 отзывов)</span></div>
+                        </div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <button class="favorite-btn">🤍</button>
+                            <div class="product-image">🧴</div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="new-price">25 000 сум</span>
+                            </div>
+                            <div class="installment">2 083 сум/мес</div>
+                            <h3 class="product-title">Антисептик для рук с увлажняющим эффектом, 100 мл</h3>
+                            <div class="product-rating"><span class="star">⭐ 4.8</span> <span class="reviews">(312 отзывов)</span></div>
+                        </div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <span class="badge new">Новинка</span>
+                            <button class="favorite-btn">🤍</button>
+                            <div class="product-image">🩹</div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="old-price">150 000 сум</span>
+                                <span class="new-price">120 000 сум</span>
+                            </div>
+                            <div class="installment">10 000 сум/мес</div>
+                            <h3 class="product-title">Набор первой помощи, универсальная домашняя аптечка</h3>
+                            <div class="product-rating"><span class="star">⭐ 4.7</span> <span class="reviews">(89 отзывов)</span></div>
+                        </div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <span class="badge sale">Акция</span>
+                            <button class="favorite-btn">🤍</button>
+                            <div class="product-image">🧴</div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="old-price">45 000 сум</span>
+                                <span class="new-price">35 000 сум</span>
+                            </div>
+                            <div class="installment">2 916 сум/мес</div>
+                            <h3 class="product-title">Лечебный крем для сухой кожи, восстановление и защита</h3>
+                            <div class="product-rating"><span class="star">⭐ 4.9</span> <span class="reviews">(204 отзыва)</span></div>
+                        </div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+
+                    <!-- РЯД 2 -->
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <span class="badge sale">Акция</span>
+                            <button class="favorite-btn">🤍</button>
+                            <div class="product-image">🦷</div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="old-price">35 000 сум</span>
+                                <span class="new-price">28 000 сум</span>
+                            </div>
+                            <div class="installment">2 333 сум/мес</div>
+                            <h3 class="product-title">Зубная паста отбеливающая, профессиональный уход</h3>
+                            <div class="product-rating"><span class="star">⭐ 4.8</span> <span class="reviews">(156 отзывов)</span></div>
+                        </div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <span class="badge original">Оригинал</span>
+                            <button class="favorite-btn">🤍</button>
+                            <div class="product-image">🌡️</div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="old-price">120 000 сум</span>
+                                <span class="new-price">95 000 сум</span>
+                            </div>
+                            <div class="installment">7 916 сум/мес</div>
+                            <h3 class="product-title">Бесконтактный инфракрасный термометр для детей и взрослых</h3>
+                            <div class="product-rating"><span class="star">⭐ 5.0</span> <span class="reviews">(210 отзывов)</span></div>
+                        </div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <button class="favorite-btn">🤍</button>
+                            <div class="product-image">🌿</div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="new-price">15 000 сум</span>
+                            </div>
+                            <div class="installment">1 250 сум/мес</div>
+                            <h3 class="product-title">Травяной сбор успокаивающий, натуральные компоненты</h3>
+                            <div class="product-rating"><span class="star">⭐ 4.6</span> <span class="reviews">(85 отзывов)</span></div>
+                        </div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <span class="badge new">Новинка</span>
+                            <button class="favorite-btn">🤍</button>
+                            <div class="product-image">😷</div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="old-price">50 000 сум</span>
+                                <span class="new-price">35 000 сум</span>
+                            </div>
+                            <div class="installment">2 916 сум/мес</div>
+                            <h3 class="product-title">Медицинские маски трехслойные, упаковка 50 шт</h3>
+                            <div class="product-rating"><span class="star">⭐ 4.9</span> <span class="reviews">(450 отзывов)</span></div>
+                        </div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <span class="badge sale">Акция</span>
+                            <button class="favorite-btn">🤍</button>
+                            <div class="product-image">💧</div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-price">
+                                <span class="old-price">80 000 сум</span>
+                                <span class="new-price">65 000 сум</span>
+                            </div>
+                            <div class="installment">5 416 сум/мес</div>
+                            <h3 class="product-title">Капли для глаз увлажняющие, снимают усталость</h3>
+                            <div class="product-rating"><span class="star">⭐ 4.8</span> <span class="reviews">(92 отзыва)</span></div>
+                        </div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- БАННЕР ТЕПЕРЬ В САМОМ НИЗУ (5 СЛАЙДОВ) -->
+        <section class="bottom-banner-section">
+            <div class="container">
+                <div class="swiper hero-swiper">
+                    <div class="swiper-wrapper">
+                        
+                        <!-- Слайд 1 -->
+                        <div class="swiper-slide">
+                            <div class="hero-content" style="background: #dff5e8;">
+                                <div class="hero-text">
+                                    <h1>Всё для здоровья<br>в одном месте</h1>
+                                    <p>Медицинские товары, лекарства и товары для здоровья</p>
+                                    <button class="hero-button">Смотреть товары</button>
+                                </div>
+                                <div class="hero-image"><div class="medical-icon">⚕️</div></div>
+                            </div>
+                        </div>
+
+                        <!-- Слайд 2 -->
+                        <div class="swiper-slide">
+                            <div class="hero-content" style="background: #e6f0ff;">
+                                <div class="hero-text">
+                                    <h1>Скидки до 50%<br>на витамины</h1>
+                                    <p>Укрепите иммунитет по выгодной цене этой осенью</p>
+                                    <button class="hero-button" style="background: #0066cc;">В каталог</button>
+                                </div>
+                                <div class="hero-image"><div class="medical-icon">🍎</div></div>
+                            </div>
+                        </div>
+
+                        <!-- Слайд 3 -->
+                        <div class="swiper-slide">
+                            <div class="hero-content" style="background: #fdf0e6;">
+                                <div class="hero-text">
+                                    <h1>Тонометры<br>со скидкой 20%</h1>
+                                    <p>Следите за здоровьем сердца каждый день</p>
+                                    <button class="hero-button" style="background: #e67300;">Купить</button>
+                                </div>
+                                <div class="hero-image"><div class="medical-icon">🩺</div></div>
+                            </div>
+                        </div>
+
+                        <!-- Слайд 4 -->
+                        <div class="swiper-slide">
+                            <div class="hero-content" style="background: #fcf4f6;">
+                                <div class="hero-text">
+                                    <h1>Для самых<br>маленьких</h1>
+                                    <p>Лучшие товары по уходу за кожей ребенка</p>
+                                    <button class="hero-button" style="background: #cc0044;">Смотреть</button>
+                                </div>
+                                <div class="hero-image"><div class="medical-icon">👶</div></div>
+                            </div>
+                        </div>
+
+                        <!-- Слайд 5 -->
+                        <div class="swiper-slide">
+                            <div class="hero-content" style="background: #f4f4f8;">
+                                <div class="hero-text">
+                                    <h1>Домашняя<br>аптечка</h1>
+                                    <p>Собери всё необходимое для первой помощи</p>
+                                    <button class="hero-button" style="background: #444466;">Выбрать</button>
+                                </div>
+                                <div class="hero-image"><div class="medical-icon">🩹</div></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- Теперь тут появится ровно 5 точек -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Medbazar. Медицинские товары и здоровье.</p>
+        </div>
+    </footer>
+
+    <!-- JS для слайдера -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
