@@ -359,22 +359,44 @@ body {
     }
 }
 
-@media (max-width: 480px) {
-    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-    .hero-text h1 { font-size: 22px; }
-    .hero-text p { font-size: 14px; }
-    .hero-button { padding: 10px 16px; font-size: 14px; width: 100%; }
-    .header-actions { gap: 10px; }
-    .action-btn { font-size: 11px; }
-    .quick-cat-card { flex-direction: column; text-align: center; padding: 10px; gap: 5px; }
-    .cat-icon { font-size: 20px; }
-    .cat-text { font-size: 12px; }
-    .product-card { padding: 8px; }
-    .product-image-wrapper { height: 140px; font-size: 40px; }
-    .product-title { font-size: 12px; height: 34px; }
-    .new-price { font-size: 15px; }
-    .installment { font-size: 10px; padding: 2px 4px; }
-    .add-to-cart { padding: 8px; font-size: 13px; }
+/* =========================================
+   УНИВЕРСАЛЬНЫЙ ПРЕМИУМ ДИЗАЙН (ДЛЯ ВСЕХ УСТРОЙСТВ)
+   ========================================= */
+body.telegram-app {
+    background-color: #f4f6f9 !important; 
+    padding-top: 10px !important;
+    /* ВОТ ОН! Отступ снизу, чтобы зеленая кнопка ничего не перекрывала: */
+    padding-bottom: 120px !important; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+/* Прячем некрасивые полосы прокрутки */
+div::-webkit-scrollbar, ul::-webkit-scrollbar, nav::-webkit-scrollbar, .categories-scroll::-webkit-scrollbar {
+    display: none !important; 
+}
+div, ul, nav, section {
+    scrollbar-width: none !important;
+}
+
+/* Делаем карточки объемными и резиновыми (чтобы текст помещался) */
+.product-card, .category-box, [class*="card"] {
+    background: #ffffff !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+    border: none !important;
+    height: auto !important; /* Текст больше не будет обрезаться */
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Отступы для заголовков */
+h1, h2, h3, .section-title {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #111 !important;
+    padding-left: 5px;
 }
 
 body.telegram-app .header {
